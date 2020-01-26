@@ -91,6 +91,17 @@ $("#login").on("click", function(event) {
 
 })
 
+
+$(".choice").on("click", function() {
+
+  playerObject.choice = this.id;
+
+  $("#choice-display").text(this.id);
+
+  database.ref("/players/" + playerNumber).set(playerObject);
+
+})
+
 /*playersRef.on("child_added", function(childSnapshot) {
 
   if (oneLoggedIn === false) {
@@ -135,7 +146,7 @@ database.ref().on("value", function(snapshot) {
 
 
 
-$("#one-answer").on("click", function(event) {
+/*$("#one-answer").on("click", function(event) {
   event.preventDefault;
   oneChoice = $("#one-choice").val().trim();
   console.log(oneChoice);
@@ -167,4 +178,4 @@ database.ref().on("value", function(snapshotOne) {
   $("#one-choice").text(snapshotOne.val().oneChoice);
   $("#choice-two-display").text(snapshotOne.val().twoChoice);
 
-})
+})*/
