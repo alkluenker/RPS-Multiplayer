@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RPS</title>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Rock Paper Scissors</h1>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="card card-default">
+          <div class="card-header">
+            Login
+          </div>
+          <div class="card-body">
+
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="player-name" type="text">
+              </div>
+              
+              <button class="btn btn-default" id="login" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+
+        <div class="card card-default">
+          <div class="card-header" id="player-number">
+            
+          </div>
+          <div class="card-body" id="one-info">
+            <h2 id="player-name-display"></h2>
+            
+
+            <form role="form">
+              <div class="form-group row">
+                <label for="guess-input">Pick rock, paper, or scissors</label>
+                <input class="form-control" id="choice" type="text">
+              </div>
+              
+              <button class="btn btn-default" id="answer" type="submit">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="col-lg-6">
+
+        <div class="card card-default">
+          <div class="card-header">
+            Player Two
+          </div>
+          <div class="card-body" id="two-info">
+            <h2 id="name-two-display"></h2>
+            
+
+            <form role="form">
+              <div class="form-group row">
+                <label for="guess-input">Pick rock, paper, or scissors</label>
+                <input class="form-control" id="two-choice" type="text">
+              </div>
+              
+              <button class="btn btn-default" id="two-answer" type="submit">Submit</button>
+            </form>
+
+            <h2 id="choice-two-display"></h2>
+
+          </div>
+        </div>
+
+      </div>-->
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+  <script src="assets/app.js"></script>
+
+</body>
